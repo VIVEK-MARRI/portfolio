@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vivek Marri | Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Vivek Marri, AI/ML Developer and Deep Learning Enthusiast. Explore projects, skills, and contact info." />
+  <meta property="og:title" content="Vivek Marri | AI/ML Enthusiast" />
+  <meta property="og:description"
+    content="Portfolio of Vivek Marri, AI/ML Developer and Deep Learning Enthusiast." />
+  <meta property="og:image" content="assets/ls-logo.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vivek Marri | AI/ML Enthusiast" />
+  <meta name="twitter:description"
+    content="Portfolio of Vivek Marri, AI/ML Developer and Deep Learning Enthusiast." />
+  <meta name="twitter:image" content="assets/ls-logo.jpg" />
+  <link rel="icon" type="image/png" href="assets/ls-logo.jpg" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- External JS -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="main-navbar">
+      <div class="navbar-inner">
+        <!-- Logo Left -->
+        <a class="logo" href="#home"><span class="logo-l">V</span><span class="logo-s">M</span></a>
+        <!-- Nav Links Center -->
+        <ul class="main-nav-links">
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- Right: Theme toggle + Socials -->
+        <div class="navbar-right">
+          <button class="theme-toggle-btn" id="theme-toggle" >
+            <span id="theme-icon"></span>
+          </button>
+          <span class="navbar-divider"> | </span>
+          <div class="navbar-socials">
+            <a href="https://github.com/VIVEK-MARRI" target="_blank" aria-label="GitHub"
+              class="navbar-social-link"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/vivek-marri-49419a274/" target="_blank" aria-label="LinkedIn"
+              class="navbar-social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:vivekyadavmarri@gmail.com" aria-label="Email" class="navbar-social-link"><i
+                class="fas fa-envelope"></i></a>
+          </div>
+          <button class="mobile-toggle" id="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Overlay Menu -->
+      <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+        <button class="mobile-close" id="mobile-menu-close"><i class="fas fa-times"></i></button>
+        <ul class="mobile-nav-links">
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text" data-aos="fade-up">
+            <h1>
+              Hey, I'm <br><span id="typed" class="text-[var(--accent)]"></span>
+            </h1>
+            <p>
+             From model experimentation to production-grade ML systems, I work across the full AI lifecycle.
+             I focus on building reliable, scalable AI solutions that translate ideas into real-world impact.
+
+            </p>
+            <div class="hero-btns flex flex-col gap-4 sm:flex-row sm:gap-6 mt-6">
+              <a class="btn w-full sm:w-auto" href="#projects">View Projects</a>
+              <a class="btn btn-outline w-full sm:w-auto" href="#contact">Contact Me</a>
+              <a class="btn w-full sm:w-auto" href="assets/resume.pdf" target="_blank"
+                aria-label="Toggle dark mode">Resume</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="profile-card">
+              <img src="assets/profile.JPG" alt="Vivek Marri" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-bg">
+      <div class="container">
+        <div class="section-header">
+          <h2>Experience & Education</h2>
+          <p>My professional journey and academic background</p>
+        </div>
+        <div class="experience-grid">
+         <div class="experience-card">
+  <div class="exp-header">
+    <div class="exp-icon">
+      <i class="fas fa-flask"></i>
+    </div>
+    <div>
+      <div class="exp-title">AI Intern — Applied Artificial Intelligence Track</div>
+      <div class="exp-company">Microsoft & SAP (AICTE Joint CSR Initiative – TechSaksham)</div>
+      <div class="exp-date">Jan 2025 - Mar 2025 · Virtual</div>
+    </div>
+  </div>
+
+  <div class="exp-description">
+    Built and deployed real-world AI systems with a focus on healthcare applications and social-impact use cases.
+  </div>
+
+  <ul class="exp-list">
+    <li>Designed and deployed an NLP-based Healthcare Chatbot using Python, FastAPI, and Docker</li>
+    <li>Implemented ML & neural networks using Scikit-learn and TensorFlow</li>
+    <li>Participated in design reviews aligned with AI-for-Social-Good objectives</li>
+  </ul>
+</div>
+
+
+<div class="experience-card">
+  <div class="exp-header">
+    <div class="exp-icon">
+      <i class="fas fa-graduation-cap"></i>
+    </div>
+    <div>
+      <div class="exp-title">B.Tech in Computer Science & Engineering</div>
+      <div class="exp-company">JNTU Hyderabad University College of Engineering (UCEM)</div>
+      <div class="exp-date">2022 – 2026 | CGPA: 6.85</div>
+    </div>
+  </div>
+
+  <div class="exp-description">
+    Focused on Artificial Intelligence, Machine Learning, and scalable software systems with emphasis on real-world deployment.
+  </div>
+
+  <ul class="exp-list">
+    <li>Relevant coursework: Machine Learning, Deep Learning, NLP, MLOps, Data Structures, and DBMS</li>
+    <li>Completed industry-aligned programs including AICTE TechSaksham and TCS iON Applied Industry Project</li>
+    <li>Built and deployed multiple end-to-end AI systems spanning modeling, APIs, CI/CD, and monitoring</li>
+  </ul>
+</div>
+
+
+<div class="experience-card">
+  <div class="exp-header">
+    <div class="exp-icon">
+      <i class="fas fa-medal"></i>
+    </div>
+    <div>
+      <div class="exp-title">Achievements</div>
+      <div class="exp-company">Certifications & Leadership</div>
+    </div>
+  </div>
+  <ul class="exp-list">
+    <li>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate — validated proficiency in AI, ML, and OCI</li>
+    <li>NVIDIA Certified in Generative AI with Diffusion Models — demonstrated applied expertise in diffusion techniques and generative AI frameworks</li>
+    <li>Technical Fest Head & Tech Lead for the Annual Technical Fest, JNTUH UCEM (2025)</li>
+    <li>Organizing Committee Head for the National-Level Workshop on Machine Learning & Big Data, JNTUH UCEM (2024)</li>
+  </ul>
+</div>
+</section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-bg">
+      <div class="container">
+        <div class="section-header">
+          <h2>Technical Skills</h2>
+          <p>Everything I’ve used to build, train, deploy, and experiment like a tech beast </p>
+        </div>
+        <div class="skills-grid">
+
+          <!-- Languages -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-code"></i></div>
+            <h3 class="skill-title">Languages</h3>
+            <div class="skill-items">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+
+          <!-- Libraries, Frameworks & Toolkits -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+            <h3 class="skill-title">Libraries & Frameworks</h3>
+            <div class="skill-items">
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">Scikit-learn</span>
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">Keras</span>
+              <span class="skill-tag">Seaborn</span>
+              <span class="skill-tag">Matplotlib</span>
+              <span class="skill-tag">OpenCV</span>
+              <span class="skill-tag">LangChain</span>
+            </div>
+          </div>
+
+          <!-- Technologies -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+            <h3 class="skill-title">Technologies</h3>
+            <div class="skill-items">
+              <span class="skill-tag">Machine Learning</span>
+              <span class="skill-tag">Deep Learning </span>
+              <span class="skill-tag">Generative AI</span>
+              <span class="skill-tag">MLOps</span>
+              <span class="skill-tag">Streamlit</span>
+            </div>
+          </div>
+
+          <!-- AI/ML Specialization -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-brain"></i></div>
+            <h3 class="skill-title">AI/ML Specialization</h3>
+            <div class="skill-items">
+              <span class="skill-tag">Computer Vision</span>
+              <span class="skill-tag">Natural Language Processing</span>
+              <span class="skill-tag">Neural Networks</span>
+              <span class="skill-tag">Speech Processing</span>
+              <span class="skill-tag">Data Analysis</span>
+            </div>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-tools"></i></div>
+            <h3 class="skill-title">Tools & Platforms</h3>
+            <div class="skill-items">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">MLflow</span>
+              <span class="skill-tag">DVC</span>
+              <span class="skill-tag">CI/CD</span>
+              <span class="skill-tag">Google Cloud Platform</span>
+              <span class="skill-tag">AWS</span>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-database"></i></div>
+            <h3 class="skill-title">Databases</h3>
+            <div class="skill-items">
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">MongoDB</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2>Projects</h2>
+          <p>My recent work and technical contributions</p>
+        </div>
+        <div class="projects-grid">
+          <!-- Urban Flood Early Warning System -->
+<div class="project-card">
+  <div class="project-content">
+    <h3 class="project-title">
+      Urban Flood Early Warning System — Real-Time MLOps Platform
+    </h3>
+    <p class="project-description">
+      End-to-end MLOps platform for real-time urban flood prediction, early warnings, and operational monitoring.
+    </p>
+    <ul class="project-highlights">
+      <li>Designed a real-time flood forecasting pipeline with automated CI/CD using Apache Airflow, MLflow, drift detection, and data validation</li>
+      <li>Deployed a high-throughput FastAPI inference service with Docker Compose achieving sub-50ms latency and horizontal scalability</li>
+      <li>Built an ACID-compliant PostgreSQL backend for prediction logging, traceability, and monitoring hooks</li>
+      <li>Optimized NumPy serialization bottlenecks, improving peak inference throughput by 3× under stress tests</li>
+    </ul>
+    <div class="project-tags">
+      <span class="project-tag">MLOps</span>
+      <span class="project-tag">FastAPI</span>
+      <span class="project-tag">Apache Airflow</span>
+      <span class="project-tag">MLflow</span>
+      <span class="project-tag">PostgreSQL</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/VIVEK-MARRI/urban_flood_early_warning" target="_blank" class="project-link">
+        <i class="fab fa-github"></i> View Project
+      </a>
+    </div>
+  </div>
+</div>
+
+
+         <!-- IntelliLog-AI -->
+<div class="project-card">
+  <div class="project-content">
+    <h3 class="project-title">
+      IntelliLog-AI — Intelligent Logistics & Delivery Optimization
+    </h3>
+    <p class="project-description">
+      AI-driven logistics optimization platform for real-time route planning, ETA prediction, and fleet-level operational analytics.
+    </p>
+    <ul class="project-highlights">
+      <li>Built a hybrid ML + optimization pipeline using XGBoost Regression and Google OR-Tools VRP solver for delivery-time prediction and route optimization</li>
+      <li>Implemented capacity- and time-window–constrained VRP with custom greedy heuristics, reducing delivery delays by up to 25% in simulated environments</li>
+      <li>Deployed a low-latency FastAPI microservice with Docker, supporting real-time route generation and ETA predictions with &lt;300ms p95 latency</li>
+      <li>Developed an interactive Streamlit dashboard for real-time fleet tracking, operational KPIs, route visualization, and SHAP-based model explainability</li>
+    </ul>
+    <div class="project-tags">
+      <span class="project-tag">FastAPI</span>
+      <span class="project-tag">XGBoost</span>
+      <span class="project-tag">OR-Tools</span>
+      <span class="project-tag">Streamlit</span>
+      <span class="project-tag">SHAP</span>
+      <span class="project-tag">Docker</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/VIVEK-MARRI/IntelliLog-AI" target="_blank" class="project-link">
+        <i class="fab fa-github"></i> View Code
+      </a>
+      <a href="https://intellilog-ai-dashboard.onrender.com/" target="_blank" class="project-link">
+        <i class="fas fa-external-link-alt"></i> Live Dashboard
+      </a>
+    </div>
+  </div>
+</div>
+
+
+          <!-- Data Mart Credit Rating Reporting -->
+<div class="project-card">
+  <div class="project-content">
+    <h3 class="project-title">
+      Data Mart Loading & Credit Rating Reporting System
+    </h3>
+    <p class="project-description">
+      Enterprise-style data engineering project focused on ETL pipelines, credit scoring, and analytical reporting.
+    </p>
+    <ul class="project-highlights">
+      <li>Designed and implemented end-to-end ETL workflows for structured credit data ingestion and transformation</li>
+      <li>Built a normalized data mart supporting credit rating analysis and reporting use cases</li>
+      <li>Implemented data validation, reconciliation checks, and reporting logic aligned with enterprise standards</li>
+      <li>Simulated real-world banking and financial reporting workflows</li>
+    </ul>
+    <div class="project-tags">
+      <span class="project-tag">Data Engineering</span>
+      <span class="project-tag">ETL</span>
+      <span class="project-tag">SQL</span>
+      <span class="project-tag">Data Warehousing</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/VIVEK-MARRI/data-mart-credit-rating-reporting" target="_blank" class="project-link">
+        <i class="fab fa-github"></i> View Project
+      </a>
+    </div>
+  </div>
+</div>
+
+          <!-- INSIGHT_BOT -->
+<div class="project-card">
+  <div class="project-content">
+    <h3 class="project-title">
+      INSIGHT_BOT — AI-Powered Data & Analytics Assistant
+    </h3>
+    <p class="project-description">
+      Conversational AI system for querying datasets, generating insights, and supporting decision-making.
+    </p>
+    <ul class="project-highlights">
+      <li>Developed an AI chatbot for data querying, insight generation, and analytics assistance</li>
+      <li>Integrated NLP pipelines for intent detection, response generation, and contextual understanding</li>
+      <li>Designed modular backend architecture for easy extensibility and deployment</li>
+    </ul>
+    <div class="project-tags">
+      <span class="project-tag">NLP</span>
+      <span class="project-tag">Python</span>
+      <span class="project-tag">AI Systems</span>
+      <span class="project-tag">Chatbot</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/VIVEK-MARRI/INSIGHT_BOT" target="_blank" class="project-link">
+        <i class="fab fa-github"></i> View Project
+      </a>
+    </div>
+  </div>
+</div>
+
+
+          <!-- RiskLens API -->
+<div class="project-card">
+  <div class="project-content">
+    <h3 class="project-title">
+      RiskLens-API — Real-Time Risk & Fraud Scoring Service
+    </h3>
+    <p class="project-description">
+      Production-ready ML API for real-time fraud detection and risk assessment.
+    </p>
+    <ul class="project-highlights">
+      <li>Built a RESTful ML inference API using FastAPI for fraud and risk scoring</li>
+      <li>Integrated trained models with feature preprocessing and validation pipelines</li>
+      <li>Designed the system for low-latency predictions and production deployment readiness</li>
+    </ul>
+    <div class="project-tags">
+      <span class="project-tag">FastAPI</span>
+      <span class="project-tag">Machine Learning</span>
+      <span class="project-tag">Fraud Detection</span>
+      <span class="project-tag">APIs</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/VIVEK-MARRI/risklens-api" target="_blank" class="project-link">
+        <i class="fab fa-github"></i> View Project
+      </a>
+    </div>
+  </div>
+</div>
+<!-- AI Healthcare Chatbot -->
+<div class="project-card">
+  <div class="project-content">
+    <h3 class="project-title">
+      AI Healthcare Chatbot — NLP-Based Medical Assistant
+    </h3>
+    <p class="project-description">
+      NLP-driven healthcare chatbot designed to provide medical guidance and assist users with symptom-related queries.
+    </p>
+    <ul class="project-highlights">
+      <li>Developed an NLP-based chatbot to handle healthcare-related queries using supervised learning techniques</li>
+      <li>Implemented end-to-end training and inference pipelines with modular preprocessing and response generation</li>
+      <li>Designed the system for API-based deployment and real-world usage scenarios</li>
+      <li>Focused on clean architecture, extensibility, and production-readiness</li>
+    </ul>
+    <div class="project-tags">
+      <span class="project-tag">Python</span>
+      <span class="project-tag">NLP</span>
+      <span class="project-tag">Machine Learning</span>
+      <span class="project-tag">Healthcare AI</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/VIVEK-MARRI/AI-health-care-chat-bot" target="_blank" class="project-link">
+        <i class="fab fa-github"></i> View Project
+      </a>
+    </div>
+  </div>
+</div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact creative-contact-section relative overflow-hidden">
+      <!-- Decorative SVG divider -->
+      <div class="absolute top-0 left-0 w-full overflow-hidden leading-[0] rotate-180 z-0">
+        <svg class="relative block w-full h-[100px]" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+          viewBox="0 0 1200 120">
+          <path d="M1200 0L0 0 892.25 114.72 1200 0z" fill="rgba(37,99,235,0.07)"></path>
+        </svg>
+      </div>
+
+      <div class="container mx-auto px-6 max-w-4xl z-10 relative creative-contact-card">
+        <h2 class="creative-contact-heading text-4xl md:text-6xl font-extrabold uppercase tracking-tight text-center">
+          <span class="gradient-text">Let's Connect</span>
+          <span class="creative-underline"></span>
+        </h2>
+        <p class="creative-contact-subtext mt-4 text-lg text-center max-w-xl mx-auto">
+          Whether it's a collab idea, tech banter, or just a random brainwave —
+          drop it below. I don't ghost... unless it's in a codebase.
+        </p>
+
+        <div class="mt-10 flex flex-col md:flex-row items-center justify-center gap-12 max-w-3xl mx-auto">
+          <!-- Lottie Animation -->
+          <div data-aos="fade-up">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_tno6cg2w.json" background="transparent"
+              speed="1" loop autoplay style="width: 100%; max-width: 350px; height: auto">
+            </lottie-player>
+          </div>
+
+          <!-- Contact Form -->
+          <form id="contact-form" data-aos="fade-up" data-aos-delay="100"
+            class="w-full md:w-3/4 space-y-6 bg-[var(--card-bg)] p-10 rounded-xl border border-white/10 shadow-xl">
+            <input type="text" name="name" placeholder="Full Name" required
+              class="w-full p-4 border-l-4 rounded-lg bg-transparent text-lg"
+              style="border-color: var(--accent); color: var(--text)" />
+
+            <input type="email" name="email" placeholder="Email Address" required
+              class="w-full p-4 border-l-4 rounded-lg bg-transparent text-lg"
+              style="border-color: var(--accent); color: var(--text)" />
+
+            <textarea name="message" placeholder="Type your thoughts here..." required
+              class="w-full p-4 border-l-4 rounded-lg bg-transparent resize-none text-lg min-h-[140px]"
+              style="border-color: var(--accent); color: var(--text)"></textarea>
+
+            <input type="hidden" name="time" id="email-time" />
+            <!-- Timestamp here -->
+
+            <button type="submit"
+              class="w-full md:w-auto px-6 py-3 font-bold text-white text-lg rounded-md tracking-wide uppercase" style="
+                  background: var(--accent);
+                  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.13);
+                ">
+              Hit Send 
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <span class="footer-copy">© 2026 Vivek Marri. All rights reserved.</span>
+      <div class="footer-center">
+        <nav class="footer-nav">
+          <a href="#home">Home</a>
+          <span>|</span>
+          <a href="#experience">Experience</a>
+          <span>|</span>
+          <a href="#skills">Skills</a>
+          <span>|</span>
+          <a href="#projects">Projects</a>
+          <span>|</span>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- External JS (at end for performance) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
